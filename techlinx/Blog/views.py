@@ -65,3 +65,9 @@ def add_comment_to_post(request, pk):
 #def categories(request, pk):
 #    categories = get_object_or_404(Categories, pk=pk)
 #    return render(request, 'blog/base.html',{'categories':categories})
+
+def categories(request, slug):
+    
+    related = Categories.objects.filter(Q(nombre=Categories.nombre))
+    print(related)
+    return render(request,'blog/categorias/cate.html',{'related':related})

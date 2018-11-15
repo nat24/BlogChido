@@ -112,7 +112,7 @@
                     {% for category in categories  %}
                     <div class="category-preview col-6 col-sm-4  ">
                             <h2>{{category.nombre}}</h2>
-                            <a href="{{post.autor.get_absolute_url}}"><img src="{{category.imagen.url}}" alt="category-image" width="170px" height="169px"></a>
+                            <a href="categorias/{{category.nombre}}"><img src="{{category.imagen.url}}" alt="category-image" width="170px" height="169px"></a>
                     </div>
                     {% empty %}
                     <h3>No hay categorias</h3>

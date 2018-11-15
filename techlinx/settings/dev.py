@@ -9,18 +9,18 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.postgresql',
-        #'NAME':'ofrjaana',
-        #'USER':'ofrjaana',
-        #'PASSWORD':'0LMyZ9yeYjJhAjPSr2uit2yNMCrEDg9F',
-        #'HOST': 'elmer.db.elephantsql.com',
-        #'PORT': '5432',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'postgres',
-        'USER':'natalia',
-        'PASSWORD':'natalia24',
-        'HOST': '127.0.0.1',
+        'NAME':'ofrjaana',
+        'USER':'ofrjaana',
+        'PASSWORD':'0LMyZ9yeYjJhAjPSr2uit2yNMCrEDg9F',
+        'HOST': 'elmer.db.elephantsql.com',
         'PORT': '5432',
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'NAME':'postgres',
+        #'USER':'natalia',
+        #'PASSWORD':'natalia24',
+        #'HOST': '127.0.0.1',
+        #'PORT': '5432',
     }
 }
 
