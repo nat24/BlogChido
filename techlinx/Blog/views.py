@@ -67,7 +67,10 @@ def add_comment_to_post(request, pk):
 #    return render(request, 'blog/base.html',{'categories':categories})
 
 def categories(request, slug):
-    
-    related = Categories.objects.filter(Q(nombre=Categories.nombre))
-    print(related)
-    return render(request,'blog/categorias/cate.html',{'related':related})
+    categories = Categories.objects.all()
+    postt = Post.objects.all()
+    slugg = slug
+    print(slug)
+    print(categories)
+    print(postt)
+    return render(request,'blog/categorias/cate.html',{'categories':categories, 'postt':postt, 'slugg': slugg})
