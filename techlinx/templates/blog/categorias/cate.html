@@ -11,12 +11,12 @@
 <body>
     {% for posttv in postt %}
     <div>
-        <h3>{{posttv.titulo}}</h3>
-        <h3>{{posttv.categoria.nombre}}</h3>
-        <hr>
+        {% if slugg == posttv.categoria.nombre %}
+        <h2><a href="{% url 'blog:post' posttv.slug  %}">{{posttv.titulo}}</a></h2>
+        <p>{{posttv.contenido |truncatechars:120 | striptags}} </p>
+        {% endif %}
     </div>
     {% endfor %}
-
 </body>
 
 </html>
